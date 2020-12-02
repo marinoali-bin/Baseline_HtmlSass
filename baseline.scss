@@ -1,0 +1,82 @@
+// Taille polide de base
+$baseFontSize : 20px;
+//Espacement vertical calculé et choisi
+$baseline: 1.5rem;
+$fontScaleRatio :1.25;
+
+//Grille arr plan
+
+body.lines {
+    background: linear-gradient(
+      to bottom,
+      transparent, transparent 95%, #aaa 100%, #aaa
+    );
+    background-size: 100% $baseline;
+  }
+
+body.invert{
+    color: white;
+    background-color: #333;
+}
+//lageur maximum d'un conteneur de texte  "//
+
+.texte--conteneur{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+//--
+
+html {
+    font-size: $baseFontSize;
+    letter-spacing: .05em;
+    font-family: sans-serif;
+}
+
+p, ul,  ol,blockquote, dl,li  {
+    margin: (1.5*$baseFontSize) 0 0 0;
+}
+
+hr {
+    margin: $baseline 0 $baseline 0;
+}
+
+// les entetes
+h1, .h1 {
+    font-size: 2.44rem;
+    line-height: 3rem;
+    margin: 1.5rem 0 0 0;
+  }
+  h2, .h2 {
+    font-size: 1.95rem;
+    line-height: 3rem;
+    margin: 1.5rem 0 0 0;
+ 
+    
+  }
+  h3, .h3{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0 0 0;
+   
+  }
+  h4,.h4{
+font-size: 1rem;
+line-height: $baseline;
+margin-top: .75rem 0 0 0;
+  }
+  h5,.h5{
+    font-size: .6rem;
+    line-height: .75rem;
+    margin: .75rem 0 0 0;
+      }
+ li{
+     font-size: .9rem;
+     line-height: 1.5rem;
+     margin: 0;
+ }
+p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
